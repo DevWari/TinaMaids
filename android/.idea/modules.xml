@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TinaMaids.iml" filepath="$PROJECT_DIR$/.idea/modules/TinaMaids.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TinaMaids.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TinaMaids.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1867673604/TinaMaids.react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1867673604/TinaMaids.react-native-community_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-983790496/TinaMaids.react-native-community_geolocation.iml" filepath="$PROJECT_DIR$/.idea/modules/-983790496/TinaMaids.react-native-community_geolocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1916534783/TinaMaids.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1916534783/TinaMaids.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/900655549/TinaMaids.react-native-date-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/900655549/TinaMaids.react-native-date-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2067921072/TinaMaids.react-native-document-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/2067921072/TinaMaids.react-native-document-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1131326474/TinaMaids.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1131326474/TinaMaids.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/152083152/TinaMaids.react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/152083152/TinaMaids.react-native-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1756472419/TinaMaids.react-native-maps.iml" filepath="$PROJECT_DIR$/.idea/modules/-1756472419/TinaMaids.react-native-maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-836755010/TinaMaids.react-native-onesignal.iml" filepath="$PROJECT_DIR$/.idea/modules/-836755010/TinaMaids.react-native-onesignal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2132793242/TinaMaids.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-2132793242/TinaMaids.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/73352927/TinaMaids.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/73352927/TinaMaids.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-692264521/TinaMaids.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-692264521/TinaMaids.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1635316798/TinaMaids.react-native-splash-screen.iml" filepath="$PROJECT_DIR$/.idea/modules/-1635316798/TinaMaids.react-native-splash-screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1777350560/TinaMaids.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/1777350560/TinaMaids.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1932384085/TinaMaids.react-native-video.iml" filepath="$PROJECT_DIR$/.idea/modules/-1932384085/TinaMaids.react-native-video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2041289901/TinaMaids.react-native-youtube.iml" filepath="$PROJECT_DIR$/.idea/modules/-2041289901/TinaMaids.react-native-youtube.iml" />
+    </modules>
+  </component>
+</project>

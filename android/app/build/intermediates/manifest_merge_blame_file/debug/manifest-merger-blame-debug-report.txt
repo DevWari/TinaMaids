@@ -1,0 +1,415 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tinamaids"
+4    android:versionCode="4"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->E:\TinaMaids\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->E:\TinaMaids\android\app\src\debug\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:5:5-79
+13-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:5:22-76
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:6:5-79
+14-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:6:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:7:5-80
+15-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:8:5-64
+16-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:8:22-62
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->[com.facebook.flipper:flipper:0.37.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\623174cd4892d9fb924ac44b102b25c0\flipper-0.37.0\AndroidManifest.xml:16:5-76
+17-->[com.facebook.flipper:flipper:0.37.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\623174cd4892d9fb924ac44b102b25c0\flipper-0.37.0\AndroidManifest.xml:16:22-73
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+18-->[:react-native-maps] E:\TinaMaids\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-81
+18-->[:react-native-maps] E:\TinaMaids\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-78
+19    <permission
+19-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:7:5-9:47
+20        android:name="com.tinamaids.permission.C2D_MESSAGE"
+20-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:8:9-63
+21        android:protectionLevel="signature" />
+21-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:9:9-44
+22
+23    <uses-permission android:name="com.tinamaids.permission.C2D_MESSAGE" />
+23-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:11:5-79
+23-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:11:22-76
+24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+24-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:17:5-82
+24-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:17:22-79
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:18:5-68
+25-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:18:22-65
+26    <!--
+27 Required so the device vibrates on receiving a push notification.
+28         Vibration settings of the device still apply.
+29    -->
+30    <uses-permission android:name="android.permission.VIBRATE" />
+30-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:23:5-66
+30-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:23:22-63
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:24:5-79
+31-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:24:22-76
+32    <!--
+33 Use to restore notifications the user hasn't interacted with.
+34         They could be missed notifications if the user reboots their device if this isn't in place.
+35    -->
+36    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+36-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:29:5-81
+36-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:29:22-78
+37    <!-- Samsung -->
+38    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+38-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:31:5-86
+38-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:31:22-83
+39    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+39-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:32:5-87
+39-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:32:22-84
+40    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+40-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:33:5-81
+40-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:33:22-78
+41    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+41-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:34:5-83
+41-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:34:22-80
+42    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+42-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:35:5-88
+42-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:35:22-85
+43    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+43-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:36:5-92
+43-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:36:22-89
+44    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+44-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:37:5-84
+44-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:37:22-81
+45    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+45-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:38:5-83
+45-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:38:22-80
+46    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+46-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:39:5-91
+46-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:39:22-88
+47    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+47-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:40:5-92
+47-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:40:22-89
+48    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+48-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:41:5-93
+48-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:41:22-90
+49    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+49-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:42:5-73
+49-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:42:22-70
+50    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+50-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:43:5-82
+50-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:43:22-79
+51    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+51-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:44:5-83
+51-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:44:22-80
+52    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+52-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:45:5-88
+52-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:45:22-85
+53    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+53-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:46:5-89
+53-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:46:22-86
+54
+55    <uses-feature
+55-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\3ca81724f46a1af5d268488a528eb8e5\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+56        android:glEsVersion="0x00020000"
+56-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\3ca81724f46a1af5d268488a528eb8e5\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+57        android:required="true" />
+57-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\3ca81724f46a1af5d268488a528eb8e5\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+58
+59    <application
+59-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:10:5-35:19
+60        android:name="com.tinamaids.MainApplication"
+60-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:11:7-38
+61        android:allowBackup="false"
+61-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:14:7-34
+62        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+62-->[androidx.core:core:1.3.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\4f3e3536c8bf9e8cb1939d2a5eeaba3a\core-1.3.1\AndroidManifest.xml:24:18-86
+63        android:debuggable="true"
+64        android:icon="@mipmap/ic_launcher"
+64-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:13:7-41
+65        android:label="@string/app_name"
+65-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:12:7-39
+66        android:requestLegacyExternalStorage="true"
+66-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:15:7-50
+67        android:testOnly="true"
+68        android:theme="@style/AppTheme"
+68-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:16:7-38
+69        android:usesCleartextTraffic="true" >
+69-->E:\TinaMaids\android\app\src\debug\AndroidManifest.xml:7:18-53
+70        <activity
+70-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:17:7-28:18
+71            android:name="com.tinamaids.MainActivity"
+71-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:18:9-37
+72            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+72-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:20:9-86
+73            android:label="@string/app_name"
+73-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:19:9-41
+74            android:launchMode="singleTask"
+74-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:21:9-40
+75            android:screenOrientation="portrait"
+75-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:22:9-45
+76            android:windowSoftInputMode="adjustResize" >
+76-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:23:9-51
+77            <intent-filter>
+77-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:24:9-27:25
+78                <action android:name="android.intent.action.MAIN" />
+78-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:25:13-65
+78-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:25:21-62
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:26:13-73
+80-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:26:23-70
+81            </intent-filter>
+82        </activity>
+83        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+83-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:29:7-84
+83-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:29:17-81
+84
+85        <meta-data
+85-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:31:7-33:66
+86            android:name="com.google.android.geo.API_KEY"
+86-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:32:9-54
+87            android:value="AIzaSyCSKKH0G9Vj7qrLkImWxxuEKXoi7CCFYoY" />
+87-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:33:9-64
+88
+89        <uses-library
+89-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:34:7-85
+90            android:name="org.apache.http.legacy"
+90-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:34:21-58
+91            android:required="false" />
+91-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:34:59-83
+92
+93        <provider
+93-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+94            android:name="com.imagepicker.ImagePickerProvider"
+94-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
+95            android:authorities="com.tinamaids.imagepickerprovider"
+95-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-71
+96            android:exported="false"
+96-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+97            android:grantUriPermissions="true" >
+97-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+98            <meta-data
+98-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:70
+99                android:name="android.support.FILE_PROVIDER_PATHS"
+99-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+100                android:resource="@xml/imagepicker_provider_paths" />
+100-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67
+101        </provider>
+102
+103        <meta-data
+103-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:49:9-51:51
+104            android:name="onesignal_app_id"
+104-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:50:13-44
+105            android:value="" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+105-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:51:13-48
+106        <meta-data
+106-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:53:9-55:70
+107            android:name="onesignal_google_project_number"
+107-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:54:13-59
+108            android:value="str:REMOTE" />
+108-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:55:13-67
+109
+110        <receiver
+110-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:57:9-67:20
+111            android:name="com.onesignal.GcmBroadcastReceiver"
+111-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:58:13-62
+112            android:permission="com.google.android.c2dm.permission.SEND" >
+112-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:59:13-73
+113
+114            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+115            <intent-filter android:priority="999" >
+115-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:62:13-66:29
+115-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:62:28-50
+116                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+116-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:17-81
+116-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:25-78
+117
+118                <category android:name="com.tinamaids" />
+118-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:65:17-61
+118-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:65:27-58
+119            </intent-filter>
+120        </receiver>
+121        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+121-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:68:9-77
+121-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:68:19-74
+122
+123        <service
+123-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:70:9-76:19
+124            android:name="com.onesignal.HmsMessageServiceOneSignal"
+124-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:71:13-68
+125            android:exported="false" >
+125-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:72:13-37
+126            <intent-filter>
+126-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:73:13-75:29
+127                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+127-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:74:17-81
+127-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:74:25-78
+128            </intent-filter>
+129        </service>
+130
+131        <activity
+131-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:78:9-84:20
+132            android:name="com.onesignal.NotificationOpenedActivityHMS"
+132-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:79:13-71
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+133-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:80:13-72
+134            <intent-filter>
+134-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:81:13-83:29
+135                <action android:name="android.intent.action.VIEW" />
+135-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:17-69
+135-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:82:25-66
+136            </intent-filter>
+137        </activity>
+138
+139        <service android:name="com.onesignal.GcmIntentService" />
+139-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:86:9-66
+139-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:86:18-63
+140        <service
+140-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:87:9-89:72
+141            android:name="com.onesignal.GcmIntentJobService"
+141-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:88:13-61
+142            android:permission="android.permission.BIND_JOB_SERVICE" />
+142-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:89:13-69
+143        <service
+143-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:90:9-92:72
+144            android:name="com.onesignal.RestoreJobService"
+144-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:91:13-59
+145            android:permission="android.permission.BIND_JOB_SERVICE" />
+145-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:92:13-69
+146        <service
+146-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:93:9-95:72
+147            android:name="com.onesignal.RestoreKickoffJobService"
+147-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:94:13-66
+148            android:permission="android.permission.BIND_JOB_SERVICE" />
+148-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:95:13-69
+149        <service
+149-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:96:9-98:43
+150            android:name="com.onesignal.SyncService"
+150-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:97:13-53
+151            android:stopWithTask="true" />
+151-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:98:13-40
+152        <service
+152-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:99:9-101:72
+153            android:name="com.onesignal.SyncJobService"
+153-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:100:13-56
+154            android:permission="android.permission.BIND_JOB_SERVICE" />
+154-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:101:13-69
+155
+156        <activity
+156-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:103:9-105:75
+157            android:name="com.onesignal.PermissionsActivity"
+157-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:104:13-61
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+158-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:105:13-72
+159
+160        <service android:name="com.onesignal.NotificationRestoreService" />
+160-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:107:9-76
+160-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:107:18-73
+161
+162        <receiver android:name="com.onesignal.BootUpReceiver" >
+162-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:109:9-114:20
+162-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:109:19-62
+163            <intent-filter>
+163-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:110:13-113:29
+164                <action android:name="android.intent.action.BOOT_COMPLETED" />
+164-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:111:17-79
+164-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:111:25-76
+165                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+165-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:112:17-82
+165-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:112:25-79
+166            </intent-filter>
+167        </receiver>
+168        <receiver android:name="com.onesignal.UpgradeReceiver" >
+168-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:115:9-119:20
+168-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:115:19-63
+169            <intent-filter>
+169-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:116:13-118:29
+170                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+170-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:117:17-84
+170-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:117:25-81
+171            </intent-filter>
+172        </receiver>
+173        <!--
+174             FirebaseMessagingService performs security checks at runtime,
+175             but set to not exported to explicitly avoid allowing another app to call it.
+176        -->
+177        <service
+177-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\0925a56c14f680c59bf089f7bef26352\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:28:9-34:19
+178            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+178-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\0925a56c14f680c59bf089f7bef26352\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:29:13-82
+179            android:exported="false" >
+179-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\0925a56c14f680c59bf089f7bef26352\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:30:13-37
+180            <intent-filter android:priority="-500" >
+180-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\0925a56c14f680c59bf089f7bef26352\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:31:13-33:29
+180-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\0925a56c14f680c59bf089f7bef26352\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:31:28-51
+181                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+181-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\0925a56c14f680c59bf089f7bef26352\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:32:17-78
+181-->[com.google.firebase:firebase-messaging:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\0925a56c14f680c59bf089f7bef26352\jetified-firebase-messaging-19.0.0\AndroidManifest.xml:32:25-75
+182            </intent-filter>
+183        </service>
+184        <service
+184-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:29:9-35:19
+185            android:name="com.google.firebase.components.ComponentDiscoveryService"
+185-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:30:13-84
+186            android:exported="false" >
+186-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:31:13-37
+187            <meta-data
+187-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+188                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+188-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+189                android:value="com.google.firebase.components.ComponentRegistrar" />
+189-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+190        </service>
+191
+192        <receiver
+192-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+193            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+193-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+194            android:exported="true"
+194-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+195            android:permission="com.google.android.c2dm.permission.SEND" >
+195-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+196            <intent-filter>
+196-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9155f56475caca90fe1e468892247d79\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+197                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+197-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:17-81
+197-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:25-78
+198            </intent-filter>
+199        </receiver>
+200
+201        <activity
+201-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\056b9a1220e90bc174f62a185df6eb71\play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+202            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+202-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\056b9a1220e90bc174f62a185df6eb71\play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+203            android:exported="false"
+203-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\056b9a1220e90bc174f62a185df6eb71\play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+204            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+204-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\056b9a1220e90bc174f62a185df6eb71\play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+205
+206        <provider
+206-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+207            android:name="com.google.firebase.provider.FirebaseInitProvider"
+207-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+208            android:authorities="com.tinamaids.firebaseinitprovider"
+208-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+209            android:exported="false"
+209-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+210            android:initOrder="100" />
+210-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+211
+212        <meta-data
+212-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9c08ade4c8e7a426756e31686cdd841c\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+213            android:name="com.google.android.gms.version"
+213-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9c08ade4c8e7a426756e31686cdd841c\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+214            android:value="@integer/google_play_services_version" />
+214-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\9c08ade4c8e7a426756e31686cdd841c\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+215    </application>
+216
+217</manifest>
