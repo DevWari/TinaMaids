@@ -295,10 +295,10 @@ const styles = StyleSheet.create({
   // Pagination dot
   dot: {
     backgroundColor: 'transparent',
-    width: 20,
-    height: 20,
-    borderRadius: 10,
-    borderWidth: 4,
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    borderWidth: 3,
     borderColor: 'black',
     marginLeft: 3,
     marginRight: 3,
@@ -308,7 +308,7 @@ const styles = StyleSheet.create({
   // Active dot
   activeDot: {
     // backgroundColor: '#FFFFFF',
-    backgroundColor: '#F9CC34',
+    backgroundColor: 'black',
   },
   // Button wrapper
   buttonWrapper: {

@@ -1,0 +1,6 @@
+module Pods_TinaMaids_OneSignalNotificationServiceExtension {
+  umbrella header "Pods-TinaMaids-OneSignalNotificationServiceExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

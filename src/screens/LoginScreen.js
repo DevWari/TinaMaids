@@ -6,7 +6,8 @@ import {
   TouchableOpacity, 
   ImageBackground, 
   ScrollView,
-  Alert
+  Alert,
+  Image
 } from 'react-native';
 import styled from 'styled-components/native';
 import { Colors } from 'src/theme';
@@ -59,40 +60,41 @@ const LoginScreen = (props) => {
       />   
       <ScrollView>
         <Container>
+          <Image source={require('src/assets/img/login/logo.png')} style={{marginTop: 40}} />
           <TitleContainer>
             <Title>Welcome!</Title>
-          </TitleContainer>
-          <Introduction textColor='black'>Existing Customers</Introduction>
+          </TitleContainer>          
           <Input placeholder="Username" 
-            placeholderTextColor = "#15892E"
+            placeholderTextColor = "black"
             onChangeText = {(text) => setUserName(text)}
             value = {username}
           />
           <Input placeholder="Password" 
-            placeholderTextColor = "#15892E"
+            placeholderTextColor = "black"
             onChangeText = {(text) => setPassword(text)}
             value={password}
             secureTextEntry={true}
           />
           <Button 
             onPress={onLogin}  
-            bgColor={Colors.textColor}
+            bgColor={"#99C3EE"}
+            style={{marginTop: 18}}
           >
-            <ButtonTitle textColor='white'>Login</ButtonTitle>
+            <ButtonTitle>Login</ButtonTitle>
           </Button>
           <ForgotButton onPress = {()=>navigate('ForgotScreen')}>
             <ForgotTitle>Forgot your password?</ForgotTitle>
           </ForgotButton>
           
-          <CustomerTitle>New Customer?</CustomerTitle>
+          <CustomerTitle>First Time Here?</CustomerTitle>
           <Button 
             onPress={()=>navigate ('InformationScreen')} 
-            bgColor='#F9CC34'
+            bgColor='white'
           >
             <ButtonTitle textColor='black'>Request An Estimate</ButtonTitle>
           </Button>
-          <Text style={{marginTop: 30, fontSize: 16}}>First time here? Did you just receive an estimate? {'\n'}
-          If so, you need to <Text style={{fontSize: 20, fontWeight: 'bold'}} onPress={()=>navigate("RegisterScreen")}>click here</Text> and register first.
+          <Text style={{marginTop: 21, fontSize: 16, alignSelf: 'center'}}>Did you just receive an estimate?</Text>
+          <Text>If so, you need to <Text style={{fontSize: 16, fontWeight: 'bold'}} onPress={()=>navigate("RegisterScreen")}>click here</Text> and register first.
           </Text>
           <View style={{height: 30}} />
         </Container>
@@ -125,16 +127,14 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  color: white;
-  font-size: 39px;
-  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
   padding-bottom: 10px;
   text-align: center;
 `;
 const TitleContainer = styled(View)`
-  margin-top: 46px;
-  margin-bottom: 20px;
-  border-bottom-width: 5px;
+  margin-top: 36px;   
   width: 70%;
 `
 const Input = styled(TextInput)`
@@ -143,25 +143,23 @@ const Input = styled(TextInput)`
   font-size: 20px;
   border-radius: 10px;
   padding-left: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   background-color: white;
 `;
 const Button = styled(TouchableOpacity)`
   width: 80%;
   height: 60px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #15892E;
   justify-content: center;
-  align-items: center;
-  border-width: 3px;
+  align-items: center;  
   background-color: ${(props) => props.bgColor};
 `;
 const ButtonTitle = styled(Text)`
   height: 35px;
   text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-  color: ${(props) => props.textColor};
+  font-size: 22px;
+  font-weight: 600;  
 `;
 const Introduction = styled(Text)`
   height: 40px;
@@ -178,14 +176,14 @@ const ForgotButton = styled(TouchableOpacity)`
 const ForgotTitle = styled(Text)`
   height: 30px;
   text-align: center;
-  font-size: 20px;
+  font-size: 12px;
   margin-bottom: 25px;
-  font-weight: 700;
+  font-weight: 400;  
 `;
 const CustomerTitle = styled(Text)`
   height: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 15px;
-  font-weight: 700;
+  font-weight: 400;
 `;

@@ -1,0 +1,6 @@
+module Pods_TinaMaids {
+  umbrella header "Pods-TinaMaids-umbrella.h"
+
+  export *
+  module * { export * }
+}

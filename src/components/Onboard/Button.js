@@ -28,7 +28,7 @@ export default class Button extends Component {
           onPress={onPress}
         >
            <Text style={styles.text}>Next</Text>
-           <Icon name='chevron-right' color={Colors.textColor} size={60} style={{fontWeight: 'bold'}} />
+           <Icon name='chevron-right'  size={30} style={{fontWeight: 'bold'}} />
         </TouchableOpacity>
       </View>
     );
@@ -45,17 +45,15 @@ const styles = StyleSheet.create({
   // Button text
   text: {
     height: 35, 
-    fontSize: 25, 
-    marginRight: 2, 
-    color: Colors.textColor,
-    fontWeight: '700'
+    fontSize: 22, 
+    marginRight: 2,     
   },
   container: {
     width: '100%',
-    height: 90,
+    height: 80,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderTopWidth: 5,
+    borderTopWidth: 3,
     borderColor: 'black',
     paddingHorizontal: 20,
   }

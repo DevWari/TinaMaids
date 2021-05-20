@@ -27,14 +27,7 @@ class App extends Component {
   }
 
   render() {
-    return (
-    //   <Provider store={store}>
-    //     <RootNavigator
-    //       ref={(navigatorRef) => {
-    //         setTopLevelNavigator(navigatorRef);
-    //       }}
-    //     />
-    //   </Provider>
+    return (    
       <Provider store={store}>
         <Drawer
           ref={drawer}

@@ -16,7 +16,10 @@ export default class Screens extends Component {
         {/* First screen */}
         <ImageBackground source={require('src/assets/img/onboard/intro-bg.png')}  style={styles.slide}>
           <View style={{alignItems: 'center', marginTop: 60}}>
-            <Image source={require('src/assets/img/onboard/icon1.png')} />
+            <View style={{width: 200, height: 200, borderRadius: 100, backgroundColor: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white'}}>
+              <Image source={require('src/assets/img/onboard/icon1.png')} style={{width: 100, height: 100}} resizeMode="contain" />
+            </View>
+            
             <Text style={styles.header}>Describe your home</Text>
           </View>
           <Text style={styles.text}>Tell us more about your home and your cleaning. You will receive an estimate in minutes!</Text>
@@ -24,7 +27,9 @@ export default class Screens extends Component {
         {/* Second screen */}
         <ImageBackground source={require('src/assets/img/onboard/intro-bg.png')}  style={styles.slide}>
           <View style={{alignItems: 'center', marginTop: 60}}>
-            <Image source={require('src/assets/img/onboard/icon2.png')} />
+            <View style={{width: 200, height: 200, borderRadius: 100, backgroundColor: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white'}}>
+              <Image source={require('src/assets/img/onboard/icon2.png')} style={{width: 100, height: 100}} resizeMode="contain" />
+            </View>
             <Text style={styles.header}>Schedule your cleaning</Text>
           </View>
           <Text style={styles.text}>Select from avaiable dates and times to have our maids clean your home</Text>
@@ -32,8 +37,10 @@ export default class Screens extends Component {
         {/* Third screen */}
         <ImageBackground source={require('src/assets/img/onboard/intro-bg.png')}  style={styles.slide}>
           <View style={{alignItems: 'center', marginTop: 60}}>
-            <Image source={require('src/assets/img/onboard/icon3.png')} />
-            <Text style={styles.header}>Clean your home!</Text>
+            <View style={{width: 200, height: 200, borderRadius: 100, backgroundColor: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white'}}>
+              <Image source={require('src/assets/img/onboard/icon3.png')} style={{width: 100, height: 100}} resizeMode="contain" />
+            </View>
+            <Text style={styles.header}>Have your home cleaned</Text>
           </View>
           <Text style={styles.text}>After your home is cleaned and you're 100% satisfied, your card is charged</Text>
         </ImageBackground>
@@ -51,22 +58,18 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   // Header styles
-  header: {
-    color: '#FFFFFF',
+  header: {    
     fontFamily: 'Avenir',
-    fontSize: 35,
-    fontWeight: 'bold',
+    fontSize: 30,    
     textAlign: 'center',
     marginVertical: 15,
     width: '100%'
   },
   // Text below header
-  text: {
-    color: Colors.textColor,
-    fontSize: 25,
+  text: {    
+    fontSize: 22,
     marginHorizontal: 15,
-    textAlign: 'center',
-    fontWeight: '700',
-    marginBottom: 170,
+    textAlign: 'center',    
+    marginBottom: 150,
   },
 });
