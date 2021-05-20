@@ -10,9 +10,9 @@ import {connect} from 'react-redux'
 
 const Header = (props) => {
   return (
-    <Container source={require('src/assets/img/dashboard/top-bg.png')}>
-      <Image source={require('src/assets/img/dashboard/logo.png')} />
-      <ContentContainer>
+    <Container>
+      <Image source={require('src/assets/img/dashboard/dash-top-logo.png')} style={{marginLeft: 4}} />
+      {/* <ContentContainer>
         <Image source = {require('src/assets/img/dashboard/tree.png')} style={{marginLeft: 15}} />
         <UserContainer>
           <SunContainer>
@@ -23,7 +23,8 @@ const Header = (props) => {
             <User>{props.name? props.name : ''}</User>
           </WelcomeContainer>
         </UserContainer>
-      </ContentContainer>  
+      </ContentContainer>   */}
+      <Name>Welcome, {'\n'}{props.name? props.name : ''}</Name>
     </Container>
   )
 }
@@ -35,39 +36,17 @@ const mapStateToProps = (state) => {
 };
 export default connect(mapStateToProps, null)(Header);
 
-const Container = styled(ImageBackground)`
+const Container = styled(View)`
   width: 100%;
-  height: 287px;
-  border-bottom-width: 3px;
-  align-items: center;
-`
-const ContentContainer = styled(View)`
-  flex: 1;
+  height: 51px;
+  border-bottom-width: 2px;
   flex-direction: row;
-  align-items: flex-end;
-`
-const UserContainer = styled(View)`
-  flex-direction: column;
-  flex: 1;
-  height: 100%;
-`
-const SunContainer = styled(View)`
-  align-items: flex-end;
-  flex: 1;
-  padding-right: 10px;
-  padding-top: 20px;
-`
-const WelcomeContainer = styled(View)`
-  flex: 1;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
 `
-const WelcomeTitle = styled(Text)`
-  fontSize: 40px;
-  color: #15892E;
-`
-const User = styled(Text)`
-  fontSize: 25px;
-  color: #15892E;
+const Name = styled (Text)`
+  font-size: 14px;  
+  text-align: right;  
+  margin-right: 8px;
+  font-weight: 400;
 `

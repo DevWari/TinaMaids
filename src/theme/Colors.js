@@ -6,7 +6,7 @@
  */
 export default {
     primaryThemeColor: '#33475B',
-    textColor: '#15892E',
+    textColor: '#99C3EE',
     primaryBgColor: '#F9FAF6',
     secondaryBgColor: '#FBFCF9',
     tertiaryBgColor: '#F7F8F4',

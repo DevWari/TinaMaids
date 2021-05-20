@@ -28,11 +28,10 @@ const Header = (props) => {
       { props.title && <Title>{props.title}</Title> }
       { props.message ? 
         <TouchableOpacity onPress={()=>onPressNotification()}>
-          <Image 
-            source={require('src/assets/img/dashboard/bell-alert.png')} 
-            style={{width: 30, height: 30}} />
-          </TouchableOpacity>:
-        <View />       
+          <Image source={require('src/assets/img/dashboard/bell-alert.png')} />
+          <Warning />
+        </TouchableOpacity>:
+        <View style={{width: 30}} />       
       }
     </Container>
   );
@@ -43,7 +42,7 @@ export default Header;
 const Container = styled(View)`
   width: 100%;
   height: 50px;
-  background-color: #15892E;
+  background-color: #99C3EE;
   justify-content: space-between;
   flex-direction: row;
   padding-horizontal: 20px;
@@ -51,7 +50,16 @@ const Container = styled(View)`
 `;
 const Title = styled(Text)`
   color: black;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;  
 `;
+const Warning = styled (View)`
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right:-3px;
+`

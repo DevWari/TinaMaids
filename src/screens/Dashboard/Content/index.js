@@ -16,11 +16,11 @@ const Content = (props) => {
       <Row>
         <StyleButton onPress={()=>navigate('MyEstimate')}>
             <Image source={require('src/assets/img/dashboard/dash1.png')} />
-            <Title>Book Job</Title>
+            <Title>Schedule a cleaning</Title>
         </StyleButton>
         <StyleButton onPress={()=> navigate("MyAppointment", {hashed_id: null})}>
             <Image source={require('src/assets/img/dashboard/dash2.png')} />
-            <Title>Scheduled Jobs</Title>
+            <Title>Upcoming</Title>
         </StyleButton>
       </Row>
       <Row>
@@ -30,13 +30,13 @@ const Content = (props) => {
         </StyleButton>
         <StyleButton onPress={() => navigate('MyEstimate')}>
             <Image source={require('src/assets/img/dashboard/dash4.png')} />
-             <Title>My Estimates</Title>
+             <Title>Estimates</Title>
         </StyleButton>
       </Row>
       <Row>
         <StyleButton onPress={()=>navigate('Support')}>
             <Image source={require('src/assets/img/dashboard/dash5.png')} />
-            <Title>Get Help</Title>
+            <Title>Invoices</Title>
         </StyleButton>
         <StyleButton
           onPress = {()=>Linking.openURL('https://tinamaids.com/locations')}

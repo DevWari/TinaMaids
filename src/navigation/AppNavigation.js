@@ -101,11 +101,7 @@ const MainTab = createBottomTabNavigator (
   {
     Dashboard: {
       screen: Dashboard,
-      navigationOptions: {
-          tabBarLabel: 'Dashboard',
-          activeColor: 'red',
-          inactiveColor: 'grey',
-          barStyle: {backgroundColor: 'white',},
+      navigationOptions: {                    
           tabBarIcon: ({tintColor}) => {
               return (
                   <View>
@@ -117,8 +113,7 @@ const MainTab = createBottomTabNavigator (
     },
     MyAccount: {
       screen: MyAccount,
-      navigationOptions: {
-          tabBarLabel: 'My Account',               
+      navigationOptions: {                     
           tabBarIcon: ({tintColor}) => {
               return (
                 <View>
@@ -130,8 +125,7 @@ const MainTab = createBottomTabNavigator (
     },
     Support: {
       screen: Support,
-      navigationOptions: {
-          tabBarLabel: 'Support',               
+      navigationOptions: {                  
           tabBarIcon: () => {
               return (
                 <View>
@@ -156,16 +150,12 @@ const MainTab = createBottomTabNavigator (
     swipeEnabled: true,
     tabBarOptions: {
       style:{
-        height:90,
-        backgroundColor: '#15892E',
+        height:41.5,
+        backgroundColor: 'white',
         padding: 10
       },
-      labelStyle: {
-        fontSize: 18,
-        
-      },
-      activeTintColor:'#F9CC34',
-      inactiveTintColor: 'black'
+      showLabel : false
+  
     }, 
   },  
 )

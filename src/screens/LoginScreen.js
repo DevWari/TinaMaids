@@ -154,6 +154,12 @@ const Button = styled(TouchableOpacity)`
   justify-content: center;
   align-items: center;  
   background-color: ${(props) => props.bgColor};
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
 `;
 const ButtonTitle = styled(Text)`
   height: 35px;

@@ -63,7 +63,7 @@ const MyAccount = (props) => {
         textStyle={{color:'#FFF'}}
       />   
       <Container>      
-        <Menu title="My Account"/>
+        <Menu title="Account"/>
         <Footer />
         <InputTitle>Name:</InputTitle>
         <Input 
@@ -176,17 +176,20 @@ const Footer = styled (View)`
   height: 20px;
 `
 const SaveButton = styled (TouchableOpacity)`
-  width: 60%;
-  height: 50px;
-  border-radius: 6px;
-  border-width: 3px;
+  width: 80%;
+  height: 60px;
+  border-radius: 30px;  
   background-color: ${props=>props.bgColor};
   justify-content: center;
   align-items: center;
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
 `
 const ButtonTitle = styled (Text)`
   font-size: 20px;
-  color: white;
-  height: 25px;
-  text-align: center;
+  color: black;  
 `
