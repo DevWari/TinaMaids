@@ -103,10 +103,9 @@ const JobScreen = (props) => {
         />
         <Footer />
         <Title>Step 2 of 4</Title>
-        <Content textColor={Colors.textColor}>About Your Job</Content>
+        <Content textColor={"black"}>About Your Job</Content>
         <Footer />
-        <InputTitle>Service Type:</InputTitle>
-        
+        <InputTitle>Service Type:</InputTitle>        
           <Dropdown
             data = {serviceTypeArray}  
             value={'Choose one'}
@@ -130,12 +129,20 @@ const JobScreen = (props) => {
           onChangeText = {(value, index, data) => setFrequency(value)}
           containerStyle = {{width: '90%', marginBottom: 20}}
         />
-        <SaveButton 
-          bgColor = {Colors.textColor}
-          onPress={createNewJob}
-        >
-          <ButtonTitle>Next</ButtonTitle>
-        </SaveButton>
+        <ButtonGroup>
+          <SaveButton 
+            bgColor = {"white"}
+            onPress={()=>props.navigation.pop()}
+          >
+            <ButtonTitle>Back</ButtonTitle>
+          </SaveButton>
+          <SaveButton 
+            bgColor = {Colors.textColor}
+            onPress={createNewJob}
+          >
+            <ButtonTitle>Next</ButtonTitle>
+          </SaveButton>
+        </ButtonGroup>        
         <Footer />
       </Container>
     </ScrollView>
@@ -162,14 +169,14 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  font-size: 25px;
+  font-size: 18px;
   flex: 1;
   width: 90%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
 `
 const Content = styled(Text)`
-  font-size: 30px;
+  font-size: 24px;
   flex: 1;
   width: 90%;
   color: ${props=>props.textColor}
@@ -186,7 +193,7 @@ const Input = styled(TextInput)`
   margin-bottom: 20px;
 `
 const InputTitle = styled(Text)`
-  font-size: 20px;
+  font-size: 18px;
   flex: 1;
   width: 90%
   padding-left: 10px;
@@ -195,18 +202,26 @@ const Footer = styled (View)`
   height: 20px;
 `
 const SaveButton = styled (TouchableOpacity)`
-  width: 80%;
+  width: 40%;
   height: 60px;
-  border-radius: 6px;
-  border-width: 3px;
+  border-radius: 30px;  
   background-color: ${props=>props.bgColor};
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-left: 17px;
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
+`
+const ButtonGroup = styled (View)`
+  flex-direction: row;
+  justify-content: space-between;  
 `
 const ButtonTitle = styled (Text)`
-  font-size: 25px;
-  color: white;
-  height: 30px;
-  text-align: center;
+  font-size: 20px;
+  color: black;  
 `

@@ -248,10 +248,11 @@ const Content = styled(Text)`
 const Input = styled(TextInput)`
   width: 90%;
   height: 50px;
-  border-radius: 4px;
+  border-radius: 8px;
   border-width: 1px;
   font-size: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
 `
 const InputTitle = styled(Text)`
@@ -266,16 +267,20 @@ const Footer = styled (View)`
 const SaveButton = styled (TouchableOpacity)`
   width: 80%;
   height: 60px;
-  border-radius: 6px;
-  border-width: 3px;
+  border-radius: 30px;  
   background-color: ${props=>props.bgColor};
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
+
 `
 const ButtonTitle = styled (Text)`
-  font-size: 25px;
-  color: white;
-  height: 30px;
-  text-align: center;
+  font-size: 20px;
+  color: black;  
 `

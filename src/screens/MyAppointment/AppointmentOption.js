@@ -467,10 +467,15 @@ const styles = StyleSheet.create({
     marginTop: -10,
     alignSelf: "center",
     width: "100%",
-    borderRadius: 8,
-    borderWidth: 3,
-    borderColor: Theme.black,
-    backgroundColor: Theme.primaryDark,
+    borderRadius: 30,   
+    backgroundColor: '#99C3EE',
+    height: 60,
+
+    shadowColor: '#000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3.87,
+    shadowOffset: {width: 0, height: 2},
+    elevation: 5
   },
   optionModal: {
     zIndex: 1,
@@ -478,11 +483,11 @@ const styles = StyleSheet.create({
     width: 220,
     alignSelf: "flex-end",
     borderRadius: 8,
-    backgroundColor: Theme.primaryDark
+    backgroundColor: '#99C3EE'
   },
   btn: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: 'black',
+    fontSize: 20,
     paddingHorizontal: 12,
     paddingVertical: 12,
     textAlign: "center"
@@ -495,7 +500,7 @@ const styles = StyleSheet.create({
   toptitle: {
     flex: 1,
     height: 50,
-    backgroundColor: 'lightgrey',
+    backgroundColor: '#A4E3BD',
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 0.6,
@@ -503,12 +508,12 @@ const styles = StyleSheet.create({
   texttitle: {
     marginLeft: 20,
     color: Theme.black,
-    fontSize: Theme.fontSubTitle,
+    fontSize: 18,
   },
   text2: {
     marginLeft: 20,
-    color: Theme.primary,
-    fontSize: 28,
+    color: 'black',
+    fontSize: 24,
     textAlign: "center",
   },
   mapGroup: {
@@ -520,7 +525,7 @@ const styles = StyleSheet.create({
   },
   textmodal: {
     textAlign: "center",
-    color: Theme.white,
+    color: 'black',
     fontSize: Theme.fontText,
   },
   map: {

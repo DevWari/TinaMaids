@@ -119,15 +119,25 @@ const styles = StyleSheet.create({
     marginBottom: 0,
     justifyContent: "center",
   },
+  
   btnWrapper: {
     marginTop: 20,
     alignSelf: "center",
-    width: "85%",
-    borderRadius: 4,
-    backgroundColor: Theme.primary,
+    width: "85%",  
+    backgroundColor: '#99C3EE',
+
+    height: 60,
+    borderRadius: 30,
+    shadowColor: '#000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3.87,
+    shadowOffset: {width: 0, height: 2},
+    elevation: 5,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   btn: {
-    color: Theme.white,
+    color: 'black',
     fontSize: Theme.fontSubTitle,
     paddingHorizontal: 12,
     paddingVertical: 12,

@@ -17,83 +17,31 @@ const DATA = [
     title: "Dashboard",
     routeName:"Dashboard",
     source: require('src/assets/img/menu/menu1.png')
-  },
-  {
-    id: "item2",
-    title: "Account",
-    routeName: "MyAccount",
-    source: require('src/assets/img/menu/menu2.png')
-  },
-  {
-    id: "item3",
-    title: "My Invoices",
-    routeName: "NotPaidInvoiceScreen",
-    source: require('src/assets/img/menu/menu3.png')
-  },
-  {
-    id: "item4",
-    routeName: "EstimateThree",
-    title: "My Estimates",
-    routeName: "MyEstimate",
-    source: require('src/assets/img/menu/menu4.png')
-  },
-  {
-    id: "item5",
-    title: "My Appointments",
-    routeName: "MyAppointment",
-    source: require('src/assets/img/menu/menu5.png')
-  },
-  {
-    id: "item6",
-    title: "Speak To Us",
-    routeName: "SpeakScreen",
-    source: require('src/assets/img/menu/menu6.png')
-  },
-  {
-    id: "item7",
-    title: "Messages",
-    routeName: "MyMessageScreen",
-    source: require('src/assets/img/menu/menu7.png')
-  },
+  }, 
+ 
   {
     id: "item8",
     title: "Notifications",
     routeName: "MyNotificationScreen",
-    source: require('src/assets/img/menu/menu8.png')
+    source: require('src/assets/img/menu/menu2.png')
   },
   {
     id: "item9",
     title: "Settings",
     routeName: "SettingScreen",
-    source: require('src/assets/img/menu/menu9.png')
-  },
-  {
-    id: "item10",
-    title: "Franchise Opportunity",
-    routeName: "FranchiseOpportunity",
-    source: null
-  },
-  {
-    id: "item11",
-    title: "Tina Maids Franchise, LLC.",
-    source: null
-  }
+    source: require('src/assets/img/menu/menu3.png')
+  },  
 ];
 
 const Item =({ item, index, separators }) => {
   return ( 
-   item.id == "item11" ? 
-     <View style = {{flexDirection: 'row', flex: 1, alignItems: 'center', height: 60}}>
-       <Text style={{fontSize: 20, marginLeft: 10}}>{item.title}</Text>
-     </View>:
     <TouchableOpacity
        key={item.id}
        onPress={() => {navigate(item.routeName, {hashed_id: null}); drawer.current.close()}}
-     >  
-       <View style = {{flexDirection: 'row', flex: 1, alignItems: 'center', height: 60, borderColor: 'gray',  borderBottomWidth: 1}}>
-         <Image source={item.source} />
-         <Text style={{fontSize: 20, marginLeft: 10}}>{item.title}</Text>
-       </View>
+       style = {{flexDirection: 'row', width: '100%', alignItems: 'center', height: 50, borderColor: 'gray',  borderBottomWidth: 1}}
+     >      
+      <Image source={item.source} style={{marginLeft: 21}} />
+      <Text style={{fontSize: 15, marginLeft: 15}}>{item.title}</Text>      
     </TouchableOpacity>
   )
 }
@@ -101,23 +49,28 @@ const Item =({ item, index, separators }) => {
 const ControlPanel = () => {
   return (
     <Container>  
-    <Header>
-      <HeaderTitle>Menu</HeaderTitle>
-    </Header>
-    <FlatList
-        
-        data={DATA}
-        renderItem={({ item, index, separators }) => 
-            <Item item={item} separators={separators} index={index} />
-        }   
-    />
+      <Header>
+        <HeaderTitle>Menu</HeaderTitle>
+      </Header>
+      <FlatList
+          
+          data={DATA}
+          renderItem={({ item, index, separators }) => 
+              <Item item={item} separators={separators} index={index} />
+          }   
+          style={{width: '100%'}}
+      />
+      <Text style={{fontSize: 14, fontWeight: '400'}}>Copyright © 2021 Clean Jeff, LLC.</Text>
+      <Text style={{fontSize: 14, marginTop: 10, fontWeight: '400'}}>Powered by</Text>
+      <Image source={require('src/assets/img/menu/logo.png')} style={{marginBottom: 26, marginTop: 7}} />      
     </Container>
   );
 };
 export default ControlPanel;
 
 const Container = styled(View)`
-  flex: 1;
+  width: 100%;
+  height: 100%;
   background-color: white;
   align-items: center;
 `;
@@ -126,10 +79,10 @@ const Header = styled (View)`
   height: 50px;
   align-items: center;
   justify-content: center;
-  background-color: #15892E;
+  background-color: #99C3EE;
 `
 const HeaderTitle = styled (Text)`
-  font-size: 20px;
+  font-size: 15px;
   height: 25px;
-  color: white;
+  color: black;
 `

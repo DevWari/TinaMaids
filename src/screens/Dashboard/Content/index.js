@@ -67,7 +67,7 @@ const StyleButton = styled(TouchableOpacity)`
   width: 47%;
   height: 170px;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding-bottom: 10px;
   align-items: center;
   margin-bottom: 30px;
@@ -83,5 +83,5 @@ const Row = styled(View)`
 `
 const Title = styled(Text)`
   font-size: 15px;
-  margin-top: 15px;
+  margin-top: 13px;
 `

@@ -193,12 +193,12 @@ class NewMessage extends React.Component {
         <View style={{height: 2}}></View>
         <View style={{flexDirection: "row"}}>
           <TouchableOpacity style={[styles.btnTabContainer,{marginRight: 2}]} onPress={()=>this.onPressInbox()}>
-            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: "#A4E3BD"} : {backgroundColor: "#A4E3BD"}]}>
               Inbox
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.btnTabContainer,{marginLeft: 2}]} onPress={()=>this.onPressHistory()}>
-            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: "#A4E3BD"} : {backgroundColor: "#A4E3BD"}]}>
               History
             </Text>
           </TouchableOpacity>
@@ -214,7 +214,7 @@ class NewMessage extends React.Component {
                 justifyContent: 'flex-start'
             }}
             labelStyle={{
-              fontSize: Theme.fontSubTitle,
+              fontSize: 18,
               textAlign: 'left',
             }}
             dropDownStyle={{backgroundColor: '#fafafa'}}
@@ -296,8 +296,8 @@ const styles = StyleSheet.create({
 
   },
   btnTab: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: "black",
+    fontSize: 16,
     paddingVertical: 8,
     paddingHorizontal: 12,
     textAlign: "center",
@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
   title: {
     marginVertical: 8,
     color: Theme.black,
-    fontSize: Theme.fontSubTitle,
+    fontSize: 14,
     fontWeight: "bold"
   },
   input: {
@@ -348,21 +348,32 @@ const styles = StyleSheet.create({
   btnBrowse: {
     flex: 1,
     color: Theme.black,
-    fontSize: Theme.fontSubTitle,
+    fontSize: 14,
     paddingVertical: 4,
     paddingHorizontal: 12,
   },
 
   btnSendWrapper: {
     marginTop: 35,
-    borderRadius: 4,
+    borderRadius: 30,
     borderWidth: 1,
     borderColor: "#c7c7c7",
-    backgroundColor: Theme.primary,
+    backgroundColor: '#99C3EE',
+    height: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '80%',
+    alignSelf: 'center',
+
+    shadowColor: '#000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3.87,
+    shadowOffset: {width: 0, height: 2},
+    elevation: 5
   },
   btnSend: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: 'black',
+    fontSize: 20,
     paddingHorizontal: 12,
     paddingVertical: 8,
     textAlign: "center"

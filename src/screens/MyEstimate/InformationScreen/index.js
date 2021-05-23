@@ -53,10 +53,12 @@ const InformationScreen = (props) => {
       />   
       <Container>    
         <Menu title="My Estimates"/>
-        <EstimateHeader />  
+        <View style={{height: 46, justifyContent: 'center', alignItems: 'center', backgroundColor: '#A4E3BD', width: '100%'}}>
+          <Text style={{fontSize: 18, fontWeight: '400'}}>Schedule a cleaning</Text>
+        </View>
         <Footer />
         <Title>Step 1 of 4</Title>
-        <Content textColor={Colors.textColor}>Your Information</Content>
+        <Content textColor="black">Your Information</Content>
         <Footer />
         
         <Input 
@@ -109,27 +111,26 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  font-size: 25px;
+  font-size: 18px;
   flex: 1;
-  width: 90%;
-  margin-bottom: 10px;
+  width: 90%;  
   text-align: center;
 `
 const Content = styled(Text)`
-  font-size: 30px;
+  font-size: 24px;
   flex: 1;
   width: 90%;
-  color: ${props=>props.textColor}
-  margin-bottom: 10px;
+  color: ${props=>props.textColor}  
   text-align: center;
 `
 const Input = styled(TextInput)`
   width: 90%;
   height: 50px;
-  border-radius: 4px;
+  border-radius: 8px;
   border-width: 1px;
   font-size: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
 `
 const Footer = styled (View)`
@@ -138,16 +139,19 @@ const Footer = styled (View)`
 const SaveButton = styled (TouchableOpacity)`
   width: 80%;
   height: 60px;
-  border-radius: 6px;
-  border-width: 3px;
+  border-radius: 30px;  
   background-color: ${props=>props.bgColor};
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 70px;
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
 `
 const ButtonTitle = styled (Text)`
-  font-size: 25px;
-  color: white;
-  height: 30px;
-  text-align: center;
+  font-size: 20px;
+  color: black;    
 `

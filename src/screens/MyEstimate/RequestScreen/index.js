@@ -64,7 +64,7 @@ const RequestScreen = (props) => {
         />
         <Footer />
         <Title>Step 4 of 4</Title>
-        <Content textColor={Colors.textColor}>Pick a date and time</Content>
+        <Content textColor={"black"}>Pick a date and time</Content>
         <Footer />
         <DatePicker
           date={date}
@@ -126,14 +126,13 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  font-size: 25px;
+  font-size: 18px;
   flex: 1;
-  width: 90%;
-  margin-bottom: 10px;
+  width: 90%;  
   text-align: center;
 `
 const Content = styled(Text)`
-  font-size: 30px;
+  font-size: 24px;
   flex: 1;
   width: 90%;
   color: ${props=>props.textColor}
@@ -145,13 +144,13 @@ const Input = styled(TextInput)`
   height: 250px;
   border-radius: 4px;
   border-width: 1px;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 10px;
   margin-bottom: 20px;
   text-align-vertical: top;
 `
 const InputTitle = styled(Text)`
-  font-size: 20px;
+  font-size: 18px;
   flex: 1;
   width: 90%
   margin-bottom: 10px;
@@ -163,16 +162,19 @@ const Footer = styled (View)`
 const SaveButton = styled (TouchableOpacity)`
   width: 80%;
   height: 60px;
-  border-radius: 6px;
-  border-width: 3px;
+  border-radius: 30px;  
   background-color: ${props=>props.bgColor};
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
 `
 const ButtonTitle = styled (Text)`
-  font-size: 25px;
-  color: white;
-  height: 30px;
-  text-align: center;
+  font-size: 20px;
+  color: black;  
 `

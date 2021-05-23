@@ -150,12 +150,12 @@ class MessageList extends React.Component {
         <View style={{height: 2}}></View>
         <View style={{flexDirection: "row"}}>
           <TouchableOpacity style={[styles.btnTabContainer,{marginRight: 2}]} onPress={()=>this.onPressInbox()}>
-            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: '#A4E3BD'} : {backgroundColor: '#A4E3BD'}]}>
               Inbox
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.btnTabContainer,{marginLeft: 2}]} onPress={()=>this.onPressHistory()}>
-            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: '#A4E3BD'} : {backgroundColor: '#A4E3BD'}]}>
               History
             </Text>
           </TouchableOpacity>
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
 
   },
   btnTab: {
-    color: Theme.white,
+    color: 'black',
     fontSize: Theme.fontSubTitle,
     paddingVertical: 8,
     paddingHorizontal: 12,
@@ -224,25 +224,35 @@ const styles = StyleSheet.create({
   title: {
     marginVertical: 10,
     color: Theme.black,
-    fontSize: Theme.fontTitle,
-    fontWeight: "bold"
+    fontSize: 18,
+    fontWeight: "400"
   },
   message: {
     paddingLeft: 10,
     marginVertical: 10,
     color: Theme.black,
-    fontSize: Theme.fontSubTitle,
+    fontSize: 16,
   },
   btnSendWrapper: {
     marginTop: 35,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: "#c7c7c7",
-    backgroundColor: Theme.primaryDark,
+    borderRadius: 8,   
+    backgroundColor: Colors.textColor,
+    fontWeight: '400',
+    height: 60,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    shadowColor: '#000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3.87,
+    shadowOffset: {width: 0, height: 2},
+    elevation: 5
+
   },
   btnSend: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: 'black',
+    fontSize: 20,
     paddingHorizontal: 60,
     paddingVertical: 4,
     textAlign: "center"

@@ -137,7 +137,7 @@ const HomeScreen = (props) => {
         />
         <Footer />
         <Title>Step 3 of 4</Title>
-        <Content textColor={Colors.textColor}>About Your Home</Content>
+        <Content textColor={"black"}>About Your Home</Content>
         <Footer />
         <InputTitle>Number of bedrooms:</InputTitle>
         <Dropdown
@@ -260,12 +260,26 @@ const HomeScreen = (props) => {
           placeholderTextColor = "grey"
           onChangeText={text => setZip(text)}
         />
-        <SaveButton 
+        {/* <SaveButton 
           bgColor = {Colors.textColor}
           onPress={createNewHome}
         >
           <ButtonTitle>Next</ButtonTitle>
-        </SaveButton>
+        </SaveButton> */}
+        <ButtonGroup>
+          <SaveButton 
+            bgColor = {"white"}
+            onPress={()=>props.navigation.pop()}
+          >
+            <ButtonTitle>Back</ButtonTitle>
+          </SaveButton>
+          <SaveButton 
+            bgColor = {Colors.textColor}
+            onPress={createNewHome}
+          >
+            <ButtonTitle>Next</ButtonTitle>
+          </SaveButton>
+        </ButtonGroup>     
         <Footer />
       </Container>         
     </KeyboardAwareScrollView>
@@ -292,14 +306,13 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  font-size: 25px;
+  font-size: 18px;
   flex: 1;
-  width: 90%;
-  margin-bottom: 10px;
+  width: 90%;  
   text-align: center;
 `
 const Content = styled(Text)`
-  font-size: 30px;
+  font-size: 24px;
   flex: 1;
   width: 90%;
   color: ${props=>props.textColor}
@@ -309,14 +322,14 @@ const Content = styled(Text)`
 const Input = styled(TextInput)`
   width: 90%;
   height: 50px;
-  border-radius: 4px;
+  border-radius: 8px;
   border-width: 1px;
-  font-size: 20px;
-  padding-left: 10px;
+  font-size: 18px;
+  padding-left: 21px;
   margin-bottom: 20px;
 `
 const InputTitle = styled(Text)`
-  font-size: 20px;
+  font-size: 18px;
   flex: 1;
   width: 90%
   padding-left: 10px;
@@ -325,23 +338,27 @@ const Footer = styled (View)`
   height: 20px;
 `
 const SaveButton = styled (TouchableOpacity)`
-  width: 80%;
+  width: 40%;
   height: 60px;
-  border-radius: 6px;
-  border-width: 3px;
+  border-radius: 30px;  
   background-color: ${props=>props.bgColor};
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-left: 17px;
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
 `
 const ButtonTitle = styled (Text)`
-  font-size: 25px;
-  color: white;
-  height: 30px;
-  text-align: center;
+  font-size: 20px;
+  color: black;  
 `
 const ExtraServiceTitle = styled (Text)`
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 10px;
   margin-left: 10px;  
   margin-top: -2px;
@@ -351,4 +368,8 @@ const ExtraServiceContainer= styled(View)`
   margin-top: 20px;
   width: 90%;
   margin-horizontal: 10;
+`
+const ButtonGroup = styled (View)`
+  flex-direction: row;
+  justify-content: space-between;  
 `

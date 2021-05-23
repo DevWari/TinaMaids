@@ -107,7 +107,7 @@ class MyAppointment extends React.Component {
     return (
       <View style={[styles.itemGroup, index % 2 != 0 ? { backgroundColor: 'white' } : {backgroundColor: '#f9f9f9'} ]}>
         <TouchableOpacity style={styles.itemOne} onPress={()=>this.onPressedItem(item)}>
-          <Text style={[styles.textOne, {color: Theme.primary}]}>
+          <Text style={[styles.textOne, {color: '#70C4C2'}]}>
             View Details({item.view_no})
           </Text>
         </TouchableOpacity>
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
   toptitle: {
     flex: 1,
     height: 50,
-    backgroundColor: 'lightgrey',
+    backgroundColor: '#A4E3BD',
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 0.6,
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
   texttitle: {
     marginLeft: 20,
     color: Theme.black,
-    fontSize: Theme.fontSubTitle,
+    fontSize: 18,
   },
   text2: {
     marginLeft: 20,

@@ -62,11 +62,11 @@ class SettingScreen extends React.Component {
               <Text numberOfLines={1} style={styles.textContent}>My Account</Text>
           </View>
         </TouchableOpacity>
-        {/* <TouchableOpacity style={styles.itemContainer} onPress={() => navigate('ChangePassword')}>
+        <TouchableOpacity style={styles.itemContainer} onPress={() => navigate('ChangePassword')}>
           <View style={styles.contentContainer}>
               <Text numberOfLines={1} style={styles.textContent}>Change Password</Text>
           </View>
-        </TouchableOpacity> */}
+        </TouchableOpacity>
         <TouchableOpacity style={styles.itemContainer} onPress={() => navigate('AboutUs')}>
           <View style={styles.contentContainer}>
               <Text numberOfLines={1} style={styles.textContent}>About Us</Text>

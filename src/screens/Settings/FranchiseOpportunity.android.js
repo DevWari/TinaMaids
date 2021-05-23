@@ -13,6 +13,7 @@ import Menu from '../../components/Menu';
 import Theme from '../../theme/Theme';
 import { ScrollView } from "react-native-gesture-handler";
 import VideoPlayer from 'react-native-video-player'
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 
 
@@ -126,13 +127,22 @@ const styles = StyleSheet.create({
   btnWrapper: {
     marginTop: 20,
     alignSelf: "center",
-    width: "85%",
-    borderRadius: 4,
-    backgroundColor: Theme.primary,
+    width: "85%",    
+    backgroundColor: '#99C3EE',
+
+    height: 60,
+    borderRadius: 30,
+    shadowColor: '#000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3.87,
+    shadowOffset: {width: 0, height: 2},
+    elevation: 5,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   btn: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: 'black',
+    fontSize: 20,
     paddingHorizontal: 12,
     paddingVertical: 12,
     textAlign: "center"

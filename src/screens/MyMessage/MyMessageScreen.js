@@ -172,12 +172,12 @@ class MyMessageScreen extends React.Component {
         
         <View style={{flexDirection: "row"}}>
           <TouchableOpacity style={[styles.btnTabContainer,{marginRight: 2}]} onPress={this.onPressInbox}>
-            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: '#A4E3BD'} : {backgroundColor: '#A4E3BD'}]}>
               Inbox
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.btnTabContainer,{marginLeft: 2}]} onPress={this.onPressHistory}>
-            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: '#A4E3BD'} : {backgroundColor: '#A4E3BD'}]}>
               History
             </Text>
           </TouchableOpacity>
@@ -213,7 +213,7 @@ class MyMessageScreen extends React.Component {
         <View style={styles.modal}>
           <View style={{position: "absolute", top: 5, right: 5}}>
             <TouchableOpacity onPress={()=>this.onPressMessageClose()}>
-              <Icon name="close" size={40} color={Theme.white}/> 
+              <Icon name="close" size={40} color={"black"}/> 
             </TouchableOpacity>
           </View>
           <View style={{alignItems: 'center', justifyContent: "center", alignSelf: "center"}}>
@@ -258,11 +258,11 @@ const styles = StyleSheet.create({
   newMessageContainer: {
     margin: 8,
     borderRadius: 8,
-    backgroundColor: Theme.primaryDark
+    backgroundColor: "#A4E3BD"
   },
   newMessage: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: 'black',
+    fontSize: 16,
     paddingVertical: 4,
     paddingHorizontal: 12,
   },
@@ -271,8 +271,8 @@ const styles = StyleSheet.create({
 
   },
   btnTab: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: 'black',
+    fontSize: 16,
     paddingVertical: 8,
     paddingHorizontal: 12,
     textAlign: "center",
@@ -293,11 +293,11 @@ const styles = StyleSheet.create({
     width: "60%",
     height: 160,
     borderRadius: 8,
-    backgroundColor: Theme.primaryDark
+    backgroundColor: "#99C3EE"
   },
   textMessage: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: "black",
+    fontSize: 14,
     paddingVertical: 2,
   }
 });

@@ -94,7 +94,9 @@ const PersonalInfo = (props) => {
       />   
       <Container>    
         <Menu title="Estimate"/>
-        <EstimateHeader />  
+        <View style={{height: 46, backgroundColor: '#A4E3BD', justifyContent: 'center', alignItems: 'center', width: '100%'}}>
+          <Text style={{fontSize: 18, fontWeight: '400'}}>Schedule a cleaning</Text>
+        </View>
         <Footer />
         <Title>My Estimate # {props.data? props.data.id: ''} </Title>
         <Content textColor={Colors.textColor}>Your Information</Content>
@@ -206,18 +208,16 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  font-size: 22px;
+  font-size: 18px;
   flex: 1;
-  width: 90%;
-  margin-bottom: 10px;
+  width: 90%;  
   text-align: center;
 `
 const Content = styled(Text)`
-  font-size: 30px;
+  font-size: 24px;
   flex: 1;
   width: 90%;
-  color: ${props=>props.textColor}
-  margin-bottom: 10px;
+  color: black;  
   text-align: center;
 `
 const DetailContainer = styled(View)`
@@ -253,16 +253,21 @@ const Footer = styled (View)`
 const SaveButton = styled (TouchableOpacity)`
   width: 80%;
   height: 60px;
-  border-radius: 6px;
-  border-width: 3px;
+  border-radius: 30px;  
   background-color: ${props=>props.bgColor};
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
 `
 const ButtonTitle = styled (Text)`
-  font-size: 25px;
-  color: white;
+  font-size: 20px;
+  color: black;
   height: 30px;
   text-align: center;
 `

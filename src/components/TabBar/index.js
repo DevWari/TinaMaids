@@ -26,7 +26,7 @@ export default TabBar;
 const Container = styled(View)`
   width: 100%;
   height: 50px;
-  background-color: #D8D8D8;
+  background-color: #A4E3BD;
   flex-direction: row;
   align-items: center;
 `;
@@ -44,8 +44,8 @@ const Tab2 = styled(View)`
   align-items: center;
 `;
 const TabTitle = styled(Text)`
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 400;
   text-align: center;
 `;
 const Title = styled(Text)`

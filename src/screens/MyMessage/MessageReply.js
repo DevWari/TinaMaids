@@ -18,13 +18,6 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import DocumentPicker from 'react-native-document-picker';
 import ImagePicker from 'react-native-image-picker';
 
-const dropData = [
-  // {label: 'Receiption 1', value: '1', icon: () => <Icon name="flag" size={18} color="#900" />},
-  {label: 'Receiption 1', value: '1'},
-  {label: 'Receiption 2', value: '2'},
-  {label: 'Receiption 3', value: '3'},
-]
-
 class MessageReply extends React.Component {
   state = {
     hashed_id: this.props.navigation.state?.params?.hashed_id,
@@ -190,12 +183,12 @@ class MessageReply extends React.Component {
         <View style={{height: 2}}></View>
         <View style={{flexDirection: "row"}}>
           <TouchableOpacity style={[styles.btnTabContainer,{marginRight: 2}]} onPress={()=>this.onPressInbox()}>
-            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "Inbox" ? {backgroundColor: "#A4E3BD"} : {backgroundColor: "#A4E3BD"}]}>
               Inbox
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.btnTabContainer,{marginLeft: 2}]} onPress={()=>this.onPressHistory()}>
-            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: Theme.primaryDark} : {backgroundColor: Theme.primary}]}>
+            <Text style={ [styles.btnTab, selected == "History" ? {backgroundColor: '#A4E3BD'} : {backgroundColor: '#A4E3BD'}]}>
               History
             </Text>
           </TouchableOpacity>
@@ -267,7 +260,7 @@ const styles = StyleSheet.create({
 
   },
   btnTab: {
-    color: Theme.white,
+    color: 'black',
     fontSize: Theme.fontSubTitle,
     paddingVertical: 8,
     paddingHorizontal: 12,
@@ -289,8 +282,8 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginBottom: 10,
     color: Theme.black,
-    fontSize: Theme.fontSubTitle,
-    fontWeight: "bold"
+    fontSize: 16,
+    fontWeight: "400"
   },
   areatext: {
     height: 120,
@@ -308,7 +301,7 @@ const styles = StyleSheet.create({
   },
   btnBrowse: {
     color: Theme.black,
-    fontSize: Theme.fontSubTitle,
+    fontSize: 16,
     paddingVertical: 4,
     paddingHorizontal: 12,
   },
@@ -318,13 +311,25 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     borderWidth: 1,
     borderColor: "#c7c7c7",
-    backgroundColor: Theme.primary,
+    backgroundColor: Colors.textColor,
+
+    height: 60,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    shadowColor: '#000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3.87,
+    shadowOffset: {width: 0, height: 2},
+    elevation: 5
   },
   btnSend: {
-    color: Theme.white,
-    fontSize: Theme.fontSubTitle,
+    color: 'black',
+    fontSize: 20,
     paddingHorizontal: 12,
     paddingVertical: 8,
-    textAlign: "center"
+    textAlign: "center",
+    
   },
 });

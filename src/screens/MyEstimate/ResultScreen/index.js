@@ -20,11 +20,7 @@ const ResultScreen = () => {
           <Title textColor={Colors.textColor}>Thank you!</Title>
         </TitleContainer>
         <Footer />
-        <Content textColor={Colors.textColor}>We have received your request. You should receive an e-mail with your estimated price within 60 minutes or less. Follow the link on your estimate to continue. </Content>
-        <Image source={require('src/assets/img/result/result.png')}
-          resizeMode="stretch"
-          style={{width: '100%'}}
-        />
+        <Content textColor={Colors.textColor}>We have received your request. You should receive an e-mail with your estimated price within 60 minutes or less. Follow the link on your estimate to continue. </Content>        
       </Container>
   
   );
@@ -36,23 +32,23 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  font-size: 30px;
+  font-size: 25px;
   flex: 1;
   text-align: center;
-  color: ${props=>props.textColor}
+  color: black;
 `
 const TitleContainer = styled(View)`
   width: 70%;
   height: 50px;
   padding-bottom: 10px;
   border-bottom-width: 2px;
-  border-color: ${props=>props.textColor}
+  border-color: black;
 `
 const Content = styled(Text)`
-  font-size: 25px;
+  font-size: 20px;
   flex: 1;
   width: 90%;
-  color: ${props=>props.textColor}
+  color: black;
   margin-bottom: 10px;
   text-align: center;
 `

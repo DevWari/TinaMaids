@@ -19,7 +19,7 @@ const Header = (props) => {
       <TouchableOpacity
         onPress = {()=>navigate(props.routeName)}
       >
-        <Icon name="arrow-left" size={30} /> 
+        <Icon name="arrow-left" size={20} /> 
       </TouchableOpacity>    
       { props.title && <Title>{props.title}</Title> }
       { props.message ? 
@@ -38,7 +38,7 @@ export default Header;
 const Container = styled(View)`
   width: 100%;
   height: 100px;
-  background-color: #15892E;
+  background-color: #99C3EE;
   justify-content: space-between;
   flex-direction: row;
   padding-horizontal: 20px;
@@ -47,7 +47,7 @@ const Container = styled(View)`
 `;
 const Title = styled(Text)`
   color: black;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 400;
   text-align: center;
 `;

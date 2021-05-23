@@ -124,28 +124,7 @@ const Support = (props) => {
             style={{width: '100%'}}  
             resizeMode="stretch"
           />
-          <Separator />
-          <Title>Call Us(Mon-Fri 9am-5pm EST)</Title>
-          <TouchableOpacity 
-            onPress={openDialScreen}
-          >
-            <Description textColor={Colors.textColor}>1(866) 49MAIDS</Description>
-          </TouchableOpacity>
-          <SpeakerButton 
-            bgColor={Colors.textColor}
-            onPress={()=>navigate('SpeakScreen')}
-          >
-            <Image source={require('src/assets/img/support/speaker.png')} />
-            <ButtonTitle>I need to speak to someone</ButtonTitle>
-          </SpeakerButton>
-          <CalendarButton 
-            bgColor={Colors.textColor}
-            onPress={()=>navigate('MyEstimate')}
-          >
-            <Image source={require('src/assets/img/support/calendar.png')} />
-            <ButtonTitle>I want to book a cleaning</ButtonTitle>
-          </CalendarButton>
-          <Content>You can also browse through our Frequently Asked Questions </Content>
+          <Separator />          
           <ScrollView style={{marginTop: 20}}>    
             <SimpleAccordion
               style= {{

@@ -11,6 +11,7 @@ import { navigate } from 'src/utils/navigation';
 import Menu from '../../components/Menu';
 import Theme from '../../theme/Theme';
 import { connect, useSelector } from "react-redux";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 class ChangePassword extends React.Component {
   state = {
@@ -126,13 +127,22 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     bottom: 100,
     width: "70%",
-    borderRadius: 8,
-    borderWidth: 3,
-    borderColor: Theme.black,
-    backgroundColor: Theme.primaryDark,
+    borderRadius: 8,   
+    backgroundColor: '#99C3EE',
+    height: 60,
+    borderRadius: 30,
+
+    shadowColor: '#000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3.87,
+    shadowOffset: {width: 0, height: 2},
+    elevation: 5,
+    justifyContent: 'center',
+    alignItems: 'center'
+
   },
   btn: {
-    color: Theme.white,
+    color: 'black',
     fontSize: Theme.fontSubTitle,
     paddingHorizontal: 12,
     paddingVertical: 12,
