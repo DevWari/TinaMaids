@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.tinamaids"
+3    package="com.cleanjeff"
 4    android:versionCode="4"
 5    android:versionName="1.0" >
 6
@@ -34,12 +34,12 @@
 18-->[:react-native-maps] E:\TinaMaids\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-78
 19    <permission
 19-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:7:5-9:47
-20        android:name="com.tinamaids.permission.C2D_MESSAGE"
+20        android:name="com.cleanjeff.permission.C2D_MESSAGE"
 20-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:8:9-63
 21        android:protectionLevel="signature" />
 21-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:9:9-44
 22
-23    <uses-permission android:name="com.tinamaids.permission.C2D_MESSAGE" />
+23    <uses-permission android:name="com.cleanjeff.permission.C2D_MESSAGE" />
 23-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:11:5-79
 23-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:11:22-76
 24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
@@ -124,7 +124,7 @@
 58
 59    <application
 59-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:10:5-35:19
-60        android:name="com.tinamaids.MainApplication"
+60        android:name="com.cleanjeff.MainApplication"
 60-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:11:7-38
 61        android:allowBackup="false"
 61-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:14:7-34
@@ -144,7 +144,7 @@
 69-->E:\TinaMaids\android\app\src\debug\AndroidManifest.xml:7:18-53
 70        <activity
 70-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:17:7-28:18
-71            android:name="com.tinamaids.MainActivity"
+71            android:name="com.cleanjeff.MainActivity"
 71-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:18:9-37
 72            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
 72-->E:\TinaMaids\android\app\src\main\AndroidManifest.xml:20:9-86
@@ -189,7 +189,7 @@
 93-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
 94            android:name="com.imagepicker.ImagePickerProvider"
 94-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
-95            android:authorities="com.tinamaids.imagepickerprovider"
+95            android:authorities="com.cleanjeff.imagepickerprovider"
 95-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-71
 96            android:exported="false"
 96-->[:react-native-image-picker] E:\TinaMaids\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
@@ -231,7 +231,7 @@
 116-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:17-81
 116-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:63:25-78
 117
-118                <category android:name="com.tinamaids" />
+118                <category android:name="com.cleanjeff" />
 118-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:65:17-61
 118-->[com.onesignal:OneSignal:3.15.3] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\c0a9fed216d10e0457ba4cf505eff433\jetified-OneSignal-3.15.3\AndroidManifest.xml:65:27-58
 119            </intent-filter>
@@ -397,7 +397,7 @@
 206-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
 207            android:name="com.google.firebase.provider.FirebaseInitProvider"
 207-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
-208            android:authorities="com.tinamaids.firebaseinitprovider"
+208            android:authorities="com.cleanjeff.firebaseinitprovider"
 208-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
 209            android:exported="false"
 209-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Ly Doan\.gradle\caches\transforms-2\files-2.1\88e2fc17c408c3bd1993240b10c755f8\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
