@@ -34,7 +34,7 @@ const Item =({ item, index, separators }) => {
        onPress={() => {navigate(item.routeName, {hashed_id: null}); drawer.current.close()}}
        style = {{flexDirection: 'row', width: '100%', alignItems: 'center', height: 50, borderColor: 'gray',  borderBottomWidth: 1}}
      >      
-      <Image source={item.source} style={{marginLeft: 21}} />
+      <Image source={item.source} style={{marginLeft: 21, width: 24, height: 24}} resizeMode="contain" />
       <Text style={{fontSize: 15, marginLeft: 15}}>{item.title}</Text>      
     </TouchableOpacity>
    )
@@ -56,7 +56,7 @@ const ControlPanel = () => {
       />
       <Text style={{fontSize: 14, fontWeight: '400'}}>Copyright © 2021 Clean Jeff, LLC.</Text>
       <Text style={{fontSize: 14, marginTop: 10, fontWeight: '400'}}>Powered by</Text>
-      <Image source={require('src/assets/img/menu/logo.png')} style={{marginBottom: 26, marginTop: 7}} />     
+      <Image source={require('src/assets/img/menu/logo.png')} style={{marginBottom: 26, marginTop: 7, width: 134, height: 39}} resizeMode="contain" />     
     </Container>
   );
 };

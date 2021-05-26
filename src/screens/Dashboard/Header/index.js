@@ -11,7 +11,7 @@ import {connect} from 'react-redux'
 const Header = (props) => {
   return (
     <Container>
-      <Image source={require('src/assets/img/dashboard/dash-top-logo.png')} style={{marginLeft: 4}} />
+      <Image source={require('src/assets/img/login/logo.png')} style={{width: 112, height: 39, marginLeft: 4}} resizeMode="contain" />
       {/* <ContentContainer>
         <Image source = {require('src/assets/img/dashboard/tree.png')} style={{marginLeft: 15}} />
         <UserContainer>

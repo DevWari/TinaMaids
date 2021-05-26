@@ -60,7 +60,7 @@ const LoginScreen = (props) => {
       />   
       <ScrollView>
         <Container>
-          <Image source={require('src/assets/img/login/logo.png')} style={{marginTop: 40}} />
+          <Image source={require('src/assets/img/login/logo.png')} style={{marginTop: 40, width: 179, height: 59}} resizeMode="contain" />
           <TitleContainer>
             <Title>Welcome!</Title>
           </TitleContainer>          

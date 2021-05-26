@@ -105,7 +105,7 @@ const MainTab = createBottomTabNavigator (
           tabBarIcon: ({tintColor}) => {
               return (
                   <View>
-                      <Image source={require('src/assets/img/dock/dock1.png')} />
+                      <Image source={require('src/assets/img/dock/dock1.png')} style={{width: 24, height: 24}} resizeMode="contain" />
                   </View>
               )                                      
           }
@@ -117,7 +117,7 @@ const MainTab = createBottomTabNavigator (
           tabBarIcon: ({tintColor}) => {
               return (
                 <View>
-                  <Image source={require('src/assets/img/dock/dock2.png')} />
+                  <Image source={require('src/assets/img/dock/dock2.png')} style={{width: 24, height: 24}} resizeMode="contain" />
                 </View>
               )                    
           }
@@ -129,7 +129,7 @@ const MainTab = createBottomTabNavigator (
           tabBarIcon: () => {
               return (
                 <View>
-                  <Image source={require('src/assets/img/dock/dock3.png')} />
+                  <Image source={require('src/assets/img/dock/dock3.png')} style={{width: 24, height: 24}} resizeMode="contain" />
                 </View>
               )                    
           }

@@ -37,9 +37,9 @@ const ForgotScreen = (props) => {
             <Title>Welcome!</Title>
           </TitleContainer>
           <Introduction textColor='black'>Forgot Password</Introduction>
-          <Text style={{marginBottom: 30, fontSize: 16, paddingLeft: 20, paddingRight: 20, textAlign: 'center'}}>If you forgot your password, please enter your email. A password reset link will be sent.</Text>
+          <Text style={{marginBottom: 30, fontSize: 14, paddingLeft: 30, paddingRight: 30, textAlign: 'center'}}>If you forgot your password, please enter your {'\n'} email. A password reset link will be sent.</Text>
           <Input placeholder="E-mail" 
-            placeholderTextColor = "#15892E"
+            placeholderTextColor = "black"
             onChangeText = {(text) => setEmail(text)}
             value = {email}
           />
@@ -50,11 +50,11 @@ const ForgotScreen = (props) => {
           >
             <ButtonTitle textColor='white'>Continue</ButtonTitle>
           </Button>  
-          <View style={{height: 80}} />
+          <View style={{height: 77}} />
           <CustomerTitle>Existing Customer?</CustomerTitle>
           <Button 
             onPress={()=>navigate('LoginScreen')} 
-            bgColor='#F9CC34'
+            bgColor='white'
           >
             <ButtonTitle textColor='black'>Login Here</ButtonTitle>
           </Button>
@@ -88,57 +88,63 @@ const Container = styled(View)`
   align-items: center;
 `;
 const Title = styled(Text)`
-  color: white;
-  font-size: 39px;
-  font-weight: bold;
+  color: black;
+  font-size: 31px;
+  font-weight: 400;
   padding-bottom: 10px;
   text-align: center;
 `;
 const TitleContainer = styled(View)`
-  margin-top: 56px;
-  margin-bottom: 20px;
-  border-bottom-width: 5px;
+  margin-top: 28px;
+  margin-bottom: 19px;
+  border-bottom-width: 2px;
   width: 70%;
 `
 const Input = styled(TextInput)`
   width: 80%;
-  height: 80px;
+  height: 60px;
   font-size: 20px;
   border-radius: 10px;
   padding-left: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 58px;
   background-color: white;
+  border-width: 1px;
+  border-color: #979797;
 `;
 const Button = styled(TouchableOpacity)`
   width: 80%;
-  height: 80px;
-  border-radius: 10px;
+  height: 60px;
+  border-radius: 30px;
   background-color: #15892E;
   justify-content: center;
-  align-items: center;
-  border-width: 3px;
+  align-items: center;  
   background-color: ${(props) => props.bgColor};
+
+  shadow-color: #000;
+  shadow-opacity: 0.8;
+  shadow-radius: 3.87px;
+  shadow-offset: 0 2px;
+  elevation: 5;
 `;
 const ButtonTitle = styled(Text)`
-  height: 40px;
+  
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  color: ${(props) => props.textColor};
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
 `;
 const Introduction = styled(Text)`
   height: 40px;
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20.5px;
   color: ${(props) => props.textColor};
 `;
 
-const CustomerTitle = styled(Text)`
-  height: 40px;
+const CustomerTitle = styled(Text)`  
   text-align: center;
-  font-size: 30px;
-  margin-bottom: 15px;
-  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-weight: 400;
 `;

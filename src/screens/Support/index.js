@@ -121,7 +121,7 @@ const Support = (props) => {
           <Menu title="Get Help"/>
           <Image 
             source={require('src/assets/img/support/support.png')} 
-            style={{width: '100%'}}  
+            style={{width: '100%', height: 250}}  
             resizeMode="stretch"
           />
           <Separator />          

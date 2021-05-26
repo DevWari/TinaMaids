@@ -15,7 +15,7 @@ const Content = (props) => {
     <Container>
       <Row>
         <StyleButton onPress={()=>navigate('MyEstimate')}>
-            <Image source={require('src/assets/img/dashboard/dash1.png')} />
+            <Image source={require('src/assets/img/dashboard/dash1.png')} style={{width: 32, height: 32}} resizeMode="contain" />
             <Title>Schedule a cleaning</Title>
         </StyleButton>
         <StyleButton onPress={()=> navigate("MyAppointment", {hashed_id: null})}>
@@ -25,23 +25,23 @@ const Content = (props) => {
       </Row>
       <Row>
         <StyleButton onPress={() => navigate('MyMessageScreen')} bgColor={Colors.textColor}>
-            <Image source={require('src/assets/img/dashboard/dash3.png')} />
+            <Image source={require('src/assets/img/dashboard/dash3.png')} style={{width: 32, height: 23}} resizeMode="contain" />
             <Title>Messages</Title>
         </StyleButton>
         <StyleButton onPress={() => navigate('MyEstimate')}>
-            <Image source={require('src/assets/img/dashboard/dash4.png')} />
+            <Image source={require('src/assets/img/dashboard/dash4.png')} style={{width: 27, height: 32}} resizeMode="contain" />
              <Title>Estimates</Title>
         </StyleButton>
       </Row>
       <Row>
         <StyleButton onPress={()=>navigate('Support')}>
-            <Image source={require('src/assets/img/dashboard/dash5.png')} />
+            <Image source={require('src/assets/img/dashboard/dash5.png')} style={{width: 32, height: 29}} resizeMode="contain" />
             <Title>Invoices</Title>
         </StyleButton>
         <StyleButton
           onPress = {()=>Linking.openURL('https://tinamaids.com/locations')}
         >
-            <Image source={require('src/assets/img/dashboard/dash6.png')} />
+            <Image source={require('src/assets/img/dashboard/dash6.png')} style={{width: 25, height: 32}} resizeMode="contain" />
             <Title>Locations</Title>
         </StyleButton>
       </Row>
