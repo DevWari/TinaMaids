@@ -12,6 +12,8 @@ import {
   SET_TOKEN_SUCCESS,
   SET_TOKEN_FAILURE
 } from './types';
+import {Alert} from 'react-native'
+import {navigate} from 'src/utils/navigation'
 
 export function* loginSaga(action) {
   const { email, password } = action;
@@ -40,22 +42,28 @@ export function* setTokenSaga(action) {
       user: user
     }
     yield put({ type: SET_TOKEN_SUCCESS, data });
-  } catch (e) {
+  } catch (e) {    
     yield put({ type: SET_TOKEN_FAILURE });
   } 
 }
 
 export function* registerSaga(action) {
   const { data } = action;
-  try {
-    const response = yield register(data);
-    const user = yield getUser(response.token);
-    const authData = {
-      token: response.token,
-      user: user.user,
-      status: response.status,
+  try {   
+      const response = yield register(data);      
+    if (response.status == 1) {
+      const user = yield getUser(response.token);    
+      const authData = {
+        token: response.token,
+        user: user.user,
+        status: response.status,
+      }
+      yield put({ type: REGISTER_SUCCESS, authData });
+    } else {
+      Alert.alert("Warning", "The email already exists."+ "\n" + "Please register another email!")
+      yield put({ type: REGISTER_FAILURE });
     }
-     yield put({ type: REGISTER_SUCCESS, authData });
+     
     //return navigate('CheckInHome');
   } catch (e) {
     yield put({ type: REGISTER_FAILURE });
